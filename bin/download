@@ -7,11 +7,11 @@ set -e
 
 case "$(uname -s)" in
 	"Darwin")
-		DOWNLOAD_URL="https://github.com/returntocorp/semgrep/releases/download/v${ASDF_INSTALL_VERSION}/semgrep-${ASDF_INSTALL_VERSION}-osx.zip"
+		DOWNLOAD_URL="https://github.com/returntocorp/semgrep/releases/download/v${ASDF_INSTALL_VERSION}/semgrep-v${ASDF_INSTALL_VERSION}-osx.zip"
 		curl -fL -o "${ASDF_DOWNLOAD_PATH}/semgrep.zip" "${DOWNLOAD_URL}"
 		;;
 	"Linux")
-		DOWNLOAD_URL="https://github.com/returntocorp/semgrep/releases/download/v${ASDF_INSTALL_VERSION}/semgrep-${ASDF_INSTALL_VERSION}ubuntu-16.04.tgz"
+		DOWNLOAD_URL="https://github.com/returntocorp/semgrep/releases/download/v${ASDF_INSTALL_VERSION}/semgrep-v${ASDF_INSTALL_VERSION}-ubuntu-16.04.tgz"
 		curl -fL -o "${ASDF_DOWNLOAD_PATH}/semgrep.tgz" "${DOWNLOAD_URL}"
 		;;
 esac
